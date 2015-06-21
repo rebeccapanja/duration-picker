@@ -1,0 +1,62 @@
+@import "mixins.less";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #43464D;
+}
+
+a {
+ color: #43464D;
+ font-size: 13px;
+}
+
+nav {
+  display: none;
+  margin-top: 2em;
+
+  a {
+    float: right;
+
+    &:focus,
+    &:hover {
+      background: none;
+      color: #13ABC6;
+    }
+  }
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 34px;
+  padding: 1em 0 2em 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.5em;
+}
+
+h3{
+  color: #13ABC6;
+  font-weight: 700;
+  margin: 2em 0 1em 0;
+}
+
+input {
+  background: url('../img/min-sec.png') 5em center no-repeat #fff;
+  padding: 16px 20px;
+  width: 165px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #43464D;
+  border: 1px solid rgba(0,0,0,0.15);
+  .border-radius(8px);
+  .font-smoothing();
+  .transition(all 0.1s ease-in-out);
+
+  &:focus {
+    outline: none;
+  }
+}

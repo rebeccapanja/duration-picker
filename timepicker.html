@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Duration Picker </title>
+      <meta name="description" content="Duration Picker lets you easily select how long something will go on for without having to switch focus from the keyboard.">
+
+      <!-- External stylesheets and fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="bootstrap-3.3.4/css/bootstrap.min.css" type='text/css' />
+      <link rel="stylesheet" href="bootstrap-3.3.4/css/bootstrap-theme.min.css" type='text/css' />
+
+      <!-- Custom stylesheets -->
+      <link rel="stylesheet" href="css/main.css" type='text/css' />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <nav>
+        <a href="#">View source code</a>
+      </nav>
+
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Duration picker</h1>
+        <p>Duration Picker lets you easily select how long something will go on for without having to switch focus from the keyboard. This approach eliminates the need for dropdowns and autoformats user input on pressing Enter. You could use this to set an interval workout beep to go off after every 1 minute, or set your bedtime playlist to pause in 30 minutes from when it starts and so on.</p>
+        
+        <h3>Demo</h3>
+        <input type="text" name="break_length_readable" placeholder="00:00" data-time-input data-parsley-trigger="change" data-parsley-regex=''/>
+
+        <h3>Examples</h3>
+        <p>Here are a few example of what the user inputs turns to on pressing Enter key.</p>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>User input</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td>1030</td>
+                <td>10:30</td>
+              </tr>
+              <tr>
+                <td>130</td>
+                <td>1:30</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>12:00</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1:00</td>
+              </tr>
+              <tr>
+                <td>7000</td>
+                <td>Invalid</td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Invalid</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.7/parsley.min.js"></script>
+    <script src="timepicker.js"></script>
+  </body>
+</html>
