@@ -1,6 +1,8 @@
 ## Duration Picker
 Duration Picker lets you easily select how long something will go on for without having to switch focus from the keyboard. This approach eliminates the need for dropdowns and autoformats user input on pressing Enter. You could use this to set an interval workout beep to go off after every 1 minute, or set your bedtime playlist to pause in 30 minutes from when it starts and so on.
 
+[View demo](https://rebeccapanja.github.io/duration-picker/)
+
 ## Examples
 
 * 1030 -> 10:30
