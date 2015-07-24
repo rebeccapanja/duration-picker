@@ -2,7 +2,7 @@
 <html>
   <head>
     <title> Duration Picker </title>
-      <meta name="description" content="Duration Picker lets you easily select how long something will go on for without having to switch focus from the keyboard.">
+      <meta name="description" content="Duration Picker lets you select fixed time periods without a dropdown.">
 
       <!-- External stylesheets and fonts -->
       <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -23,9 +23,28 @@
 
       <div class="col-md-8 col-md-offset-2">
         <h1>Duration picker</h1>
-        <p>Duration Picker lets you easily select how long something will go on for without having to switch focus from the keyboard. This approach eliminates the need for dropdowns and autoformats user input on pressing Enter. You could use this to set an interval workout beep to go off after every 1 minute, or set your bedtime playlist to pause in 30 minutes from when it starts and so on.</p>
+
+        <h3>What is a duration picker?</h3>
+        <p>Duration Picker lets you select fixed time periods. You can choose how long something will go on for, not relative to a date. This particular project experiments with auto formatting user inputs instead of using a traditional dropdown.</p>
+
+        <h3>What are some examples where I could use this?</h3>
+        <ul>
+          <li>Set your bedtime playlist to stop 30 minutes from start.</li>
+          <li>Setup beeps for your interval workout.</li>
+          <li>For a timed test or interview.</li>
+          <li>Give you reminders x minutes before your calendar event.</li>
+        </ul>
+        <p>And so on. This is not a library yet, but a component to incorporate as part of a bigger project!</p>
+
+        <h3>How is this different from the rest?</h3>
+        <p>The obvious choice for a picker would be a dropdown but this project experiments with keeping the user's focus on their keyboard. This approach eliminates the need for clicking a dropdown, scrolling to find your option and instead  auto-formats your input on pressing Enter.</p>
+        <p>Also, a quick Google search will reveal that while there are plenty of datepicker and timepicker options, there is no good duration picker and that's how this project came about.</p>
+
+        <h3>How does it work? Why does it work this way?</h3>
+        <p>This was built for min:sec format. Its easy to imagine that when i type 1030, I would want it to show as 10:30. The trickier one was 3 digits like 130. Is that 1:30 or 13:00? For the scenario I was working with, it was far more likely that the user meant 1:30 and not 13 so that's the approach I decided to go with. Obviously, these can be easily tweaked to fit another project's needs.</p>
         
         <h3>Demo</h3>
+        <p>Input some digits and hit Enter.</p>
         <input type="text" name="break_length_readable" placeholder="00:00" data-time-input data-parsley-trigger="change" data-parsley-regex=''/>
 
         <h3>Examples</h3>
