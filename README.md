@@ -7,7 +7,7 @@ Duration Picker lets you select fixed time periods. You can choose how long some
 * Set your bedtime playlist to stop 30 minutes from start.
 * Setup beeps for your interval workout.
 * For a timed test or interview.
-* Give you reminders x minutes before your calendar event.
+* Remind you x minutes before your calendar event.
 
 And so on. This is not a library yet, but a component to incorporate as part of a bigger project!
 
